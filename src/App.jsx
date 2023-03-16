@@ -82,17 +82,17 @@ function Home() {
       <div className="flex items-center gap-4">
         <img
           className="w-60 h-80 rounded-xl"
-          src="/picture-one-home.png"
+          src="./picture-one-home.png"
           alt=""
         />
         <img
           className="w-60 h-80 rounded-xl"
-          src="/picture-two-home.png"
+          src="./picture-two-home.png"
           alt=""
         />
         <img
           className="w-60 h-80 rounded-xl"
-          src="/picture-three-home.png"
+          src="./picture-three-home.png"
           alt=""
         />
       </div>
@@ -125,7 +125,7 @@ function Enterprise() {
         <div className="space-y-4">
           <img
             className="w-20 h-50 rounded-full mx-auto"
-            src="/user-one.jpeg"
+            src="./user-one.jpeg"
             alt=""
           />
           <h1 className="text-xl text-center font-bold">Eduardo Uribe</h1>
@@ -146,7 +146,7 @@ function Enterprise() {
         <div className="space-y-4">
           <img
             className="w-20 h-50 rounded-full mx-auto"
-            src="/user-two.jpeg"
+            src="./user-two.jpeg"
             alt=""
           />
           <h1 className="text-xl text-center font-bold">Eduardo Uribe</h1>
@@ -167,7 +167,7 @@ function Enterprise() {
         <div className="space-y-4">
           <img
             className="w-20 h-50 rounded-full mx-auto"
-            src="/user-one.jpeg"
+            src="./user-one.jpeg"
             alt=""
           />
           <h1 className="text-xl text-center font-bold">Eduardo Uribe</h1>
@@ -188,7 +188,7 @@ function Enterprise() {
         <div className="space-y-4">
           <img
             className="w-20 h-50 rounded-full mx-auto"
-            src="/user-two.jpeg"
+            src="./user-two.jpeg"
             alt=""
           />
           <h1 className="text-xl text-center font-bold">Eduardo Uribe</h1>
