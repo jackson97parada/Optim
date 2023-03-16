@@ -1,25 +1,26 @@
-import { Route, Routes } from "react-router-dom";
-import { Header } from "../header/Header";
-import { HeaderHome } from "../header/HeaderHome";
-
 export function Navbar() {
   return (
     <nav className="flex justify-between">
       <ul className="flex gap-20">
-        <i></i>
-        <li></li>
+        <i>
+          <a href="">Icon</a>
+        </i>
         <li>
-          <a href="/Optim/Services">Servicios</a>
+          <a href="#home">Inicio</a>
         </li>
         <li>
-          <a href="/Optim/Enterprise">Empresa</a>
+          <a href="#services">Servicios</a>
         </li>
         <li>
-          <a href="/Optim/Customer">Clientes</a>
+          <a href="#enterprise">Empresa</a>
+        </li>
+        <li>
+          <a href="#customer">Clientes</a>
         </li>
       </ul>
-
-      <button>Contacto</button>
+      <button>
+        <a href="#contact">Contact</a>
+      </button>
     </nav>
   );
 }
