@@ -1,3 +1,7 @@
+import pictureOne from "/picture-one-home.png";
+import pictureTwo from "/picture-two-home.png";
+import pictureThree from "/picture-three-home.png";
+
 export function Home() {
   return (
     <div id="home" className="flex flex-wrap gap-10">
@@ -18,21 +22,9 @@ export function Home() {
         </p>
       </div>
       <div className="flex items-center gap-4">
-        <img
-          className="w-60 h-80 rounded-xl"
-          src="../public/picture-one-home.png"
-          alt=""
-        />
-        <img
-          className="w-60 h-80 rounded-xl"
-          src="../dist/picture-two-home.png"
-          alt=""
-        />
-        <img
-          className="w-60 h-80 rounded-xl"
-          src="../dist/picture-three-home.png"
-          alt=""
-        />
+        <img className="w-60 h-80 rounded-xl" src={pictureOne} alt="" />
+        <img className="w-60 h-80 rounded-xl" src={pictureTwo} alt="" />
+        <img className="w-60 h-80 rounded-xl" src={pictureThree} alt="" />
       </div>
     </div>
   );
