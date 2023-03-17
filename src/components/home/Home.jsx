@@ -1,6 +1,6 @@
-import pictureOne from "/picture-one-home.png";
-import pictureTwo from "/picture-two-home.png";
-import pictureThree from "/picture-three-home.png";
+import pictureOne from "../../../public/picture-one-home.png";
+import pictureTwo from "../../../public/picture-two-home.png";
+import pictureThree from "../../../public/picture-three-home.png";
 
 export function Home() {
   return (

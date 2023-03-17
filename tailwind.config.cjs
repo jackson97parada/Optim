@@ -5,6 +5,9 @@ module.exports = {
     extend: {
       backgroundImage: { bgHeader: "url('../dist/picture-header.png')" },
     },
+    fontFamily: {
+      poppins: ["Poppins", "sans-serif"],
+    },
   },
   plugins: [],
 };

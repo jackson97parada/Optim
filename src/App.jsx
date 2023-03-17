@@ -8,7 +8,7 @@ import { Contact } from "./components/contact/Contact";
 
 export default function App() {
   return (
-    <div className="p-14 container w-full max-w-1200 mx-auto px-5">
+    <div className="font-poppins p-14 pt-32 container w-full max-w-1200 mx-auto px-5">
       <Navbar />
       <Header />
       <Home />

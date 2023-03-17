@@ -1,4 +1,6 @@
 import { Partner } from "./Partner";
+import userOne from "../../../public/user-one.jpeg";
+import userTwo from "../../../public/user-two.jpeg";
 
 export function Enterprise() {
   return (
@@ -15,10 +17,10 @@ export function Enterprise() {
       <h2 className="text-3xl font-semibold mb-20">Nuestros Socios</h2>
       {/* Components */}
       <div className="grid grid-cols-2">
-        <Partner image="../../../dist/user-one.jpeg" name="Eduardo Uribe" />
-        <Partner image="../../../dist/user-two.jpeg" name="Jaime Bermúdez" />
-        <Partner image="../../../dist/user-two.jpeg" name="Santiago Arango" />
-        <Partner image="../../../dist/user-one.jpeg" name="Julián Páez" />
+        <Partner image={userOne} name="Eduardo Uribe" />
+        <Partner image={userTwo} name="Jaime Bermúdez" />
+        <Partner image={userTwo} name="Santiago Arango" />
+        <Partner image={userOne} name="Julián Páez" />
       </div>
     </div>
   );
