@@ -13,7 +13,9 @@
   "dependencies": {
     "@coreui/coreui": "^4.2.6",
     "@coreui/react": "^4.6.0",
+    "blurhash": "^2.0.5",
     "react": "^18.2.0",
+    "react-blurhash": "^0.3.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.9.0",
     "react-slick": "^0.29.0",

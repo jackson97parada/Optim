@@ -1,30 +1,40 @@
-import pictureOne from "../../../public/picture-one-home.png";
-import pictureTwo from "../../../public/picture-two-home.png";
-import pictureThree from "../../../public/picture-three-home.png";
+import pictureOne from "/picture-one-home.jpg";
+import pictureTwo from "/picture-two-home.jpg";
+import pictureThree from "/picture-three-home.jpg";
 
 export function Home() {
+  const homeData = {
+    title: "¿Qué hacemos?",
+    descriptionOne:
+      "Ofrecemos servicios de consultoría para la gestión ambiental y social de los sectores productivos. Hemos desarrollado proyectos para los sectores agropecuario, pesquero, agroindustrial, forestal, transporte, infraestructura, alimentos y bebidas, y construcción de vivienda a nivel nacional e internacional.",
+    descriptionTwo:
+      "Nuestro propósito es optimizar y fortalecer organizaciones públicas, privadas y de cooperacion internacional para desarrollar estrategias sostenibles que contribuyan a la generación de bienestar social y a la prosperidad económica.",
+  };
   return (
-    <div id="home" className="flex flex-wrap gap-10">
+    <div id="home" className="flex flex-wrap py-40 mx-20 gap-52">
       <div className="w-2/6">
-        <h1 className="text-7xl font-bold mb-20">¿Qué hacemos?</h1>
-        <p className="mb-10">
-          Ofrecemos servicios de consultoría para la gestión ambiental y social
-          de los sectores productivos. Hemos desarrollado proyectos para los
-          sectores agropecuario, pesquero, agroindustrial, forestal, transporte,
-          infraestructura, alimentos y bebidas, y construcción de vivienda a
-          nivel nacional e internacional.
+        <h1 className="text-7xl font-semibold mb-12">{homeData.title}</h1>
+        <p className="mb-10 text-justify leading-5">
+          {homeData.descriptionOne}
         </p>
-        <p>
-          Nuestro propósito es optimizar y fortalecer organizaciones públicas,
-          privadas y de cooperacion internacional para desarrollar estrategias
-          sostenibles que contribuyan a la generación de bienestar social y a la
-          prosperidad económica.
-        </p>
+        <p className="text-justify leading-5">{homeData.descriptionTwo}</p>
       </div>
-      <div className="flex items-center gap-4">
-        <img className="w-60 h-80 rounded-xl" src={pictureOne} alt="" />
-        <img className="w-60 h-80 rounded-xl" src={pictureTwo} alt="" />
-        <img className="w-60 h-80 rounded-xl" src={pictureThree} alt="" />
+      <div className="block items-center gap-4">
+        <img
+          className="shadow-shadowPicture absolute z-30 w-[285px] h-[454px] rounded-3xl"
+          src={pictureOne}
+          alt=""
+        />
+        <img
+          className="shadow-shadowPicture absolute ml-[188px] mt-[300px] z-20 w-[220px] h-[274px] rounded-3xl"
+          src={pictureTwo}
+          alt=""
+        />
+        <img
+          className="shadow-shadowPictureThree absolute ml-[300px] mt-[50px] mb-20 z-10 w-[220px] h-[280px] rounded-3xl"
+          src={pictureThree}
+          alt=""
+        />
       </div>
     </div>
   );
