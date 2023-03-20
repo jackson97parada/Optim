@@ -1,6 +1,8 @@
 import { Partner } from "./Partner";
-import userOne from "../../../public/user-one.jpeg";
-import userTwo from "../../../public/user-two.jpeg";
+import userOne from "/user-one.jpeg";
+import userTwo from "/user-two.jpeg";
+import userThree from "/user-three.jpeg";
+import userFour from "/user-four.jpeg";
 
 export function Enterprise() {
   return (
@@ -19,8 +21,8 @@ export function Enterprise() {
       <div className="grid grid-cols-2 gap-y-20">
         <Partner image={userOne} name="Eduardo Uribe" />
         <Partner image={userTwo} name="Jaime Bermúdez" />
-        <Partner image={userTwo} name="Santiago Arango" />
-        <Partner image={userOne} name="Julián Páez" />
+        <Partner image={userThree} name="Santiago Arango" />
+        <Partner image={userFour} name="Julián Páez" />
       </div>
     </div>
   );
