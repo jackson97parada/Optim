@@ -1,4 +1,4 @@
-import pictureContact from "/picture-contact.jpeg";
+import pictureContact from "/picture-contact.jpg";
 // import iconTel from "/icon-tel.png";
 // import iconMessage from "/icon-message.png";
 import iconUbication from "/icon-ubication.png";
@@ -45,7 +45,7 @@ export function Contact() {
       </div>
       <div className="flex items-center">
         <img
-          className="w-[512px] h-[345px] shadow-shadowPartner object-cover rounded-[40px]"
+          className="w-[512px] h-[345px] shadow-shadowContact object-cover rounded-[40px]"
           src={pictureContact}
           alt="picture-contact"
         />

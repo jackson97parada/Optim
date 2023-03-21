@@ -5,7 +5,7 @@ export function Card({ image, title, description, serviceId }) {
     <div className="w-[255px]">
       <Link to={`/Optim/services/${serviceId}`}>
         <img
-          className="h-[344px] rounded-[27px] mx-auto shadow-shadowService"
+          className="h-[344px] w-[248px] rounded-[27px] mx-auto shadow-shadowService bg-contain "
           src={image}
           alt="image-carrousel"
         />
