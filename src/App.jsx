@@ -5,6 +5,7 @@ import { Service } from "./components/service/Service";
 import { Enterprise } from "./components/enterprise/Enterprise";
 import { Customer } from "./components/customer/Customer";
 import { Contact } from "./components/contact/Contact";
+import Footer from "./components/footer/Footer";
 
 export default function App() {
   return (
@@ -16,6 +17,7 @@ export default function App() {
       <Enterprise />
       <Customer />
       <Contact />
+      <Footer />
     </div>
   );
 }

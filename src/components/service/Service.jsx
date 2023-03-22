@@ -18,21 +18,21 @@ const servicesData = [
   },
   {
     image: manos,
-    title: "Gestión Empresarial",
+    title: "Operación de proyectos de cooperación internacional",
     description:
       "Evaluación del desempeño ambiental y social de las empresas, diseño y acompañamiento en la implementación de estrategias de sostenibilidad social y ambiental.",
     id: 2,
   },
   {
     image: niños,
-    title: "Gestión Social",
+    title: "Gestión ambiental y social de proyectos productivos",
     description:
       "Fortalecimiento de organizaciones comunitarias (campesinas, indígenas, afrondescendientes) para la gestión y el manejo sostenible y productivo de los recursos naturales de sus territorios.",
     id: 3,
   },
   {
     image: reunion,
-    title: "Políticas Públicas",
+    title: "Desarrollo de políticas públicas",
     description:
       "Fortalecimiento de organizaciones comunitarias (campesinas, indígenas, afrondescendientes) para la gestión y el manejo sostenible y productivo de los recursos naturales de sus territorios.",
     id: 4,
@@ -46,9 +46,9 @@ export function Service() {
     dotsClass: "slick-dots",
     arrows: true,
     centerMode: true,
-    centerPadding: "330px",
+    centerPadding: "80px",
     infinite: true,
-    slidesToShow: 2,
+    slidesToShow: 3,
     speed: 500,
     autoplaySpeed: 5000,
     autoplay: true,

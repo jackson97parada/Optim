@@ -7,11 +7,11 @@ import ServiceView from "./components/service/ServiceView";
 
 const routes = createBrowserRouter([
   {
-    path: "/Optim",
+    path: "/",
     element: <App />,
   },
   {
-    path: "/Optim/services/:serviceId",
+    path: "/services/:serviceId",
     element: <ServiceView />,
   },
 ]);
