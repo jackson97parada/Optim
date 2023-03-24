@@ -1,6 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+    "node_modules/flowbite/**/*.{js,jsx,ts,tsx}",
+  ],
   theme: {
     extend: {
       backgroundImage: {
@@ -27,5 +31,5 @@ module.exports = {
       shadowContact: "-13px 14px 18px 3px rgba(0,0,0,0.3)",
     },
   },
-  plugins: [],
+  plugins: [require("flowbite/plugin.js")],
 };

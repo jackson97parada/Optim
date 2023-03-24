@@ -1,9 +1,11 @@
-import cambioClimatico from "/cambio-climatico.jpg";
 import serviceOne from "/service-one.jpg";
 import serviceOneDetail from "/service-one-detail.jpg";
 import serviceTwo from "/service-two.jpg";
 import serviceTwoDetail from "/service-two-detail.jpg";
-import niños from "/niños.jpg";
+import serviceThree from "/service-three.jpg";
+import serviceThreeDetail from "/service-three-detail.jpg";
+import serviceFour from "/service-four.jpg";
+import serviceFourDetail from "/service-four-detail.jpg";
 
 export default [
   {
@@ -54,6 +56,55 @@ export default [
         "Asesoría jurídica para el tratamiento de los asuntos ambientales y sociales.",
       ],
       image: serviceTwoDetail,
+    },
+  },
+  {
+    id: 3,
+    main: {
+      image: serviceThree,
+      title: "Adaptación y mitigación del cambio climático",
+      description:
+        "Medición de la huella de carbono hídrica de las empresas y los negocio, diseño de medidas de control de emisiones y mitigación.",
+    },
+    detail: {
+      title: "Gestión ambiental y social de proyectos productivos",
+      description:
+        "OPTIM ha realizado “Gap Analyses” y marcos política de reasentamiento para proyectos mineros. Ha realizado Debidas Diligencias ambiental y social para varias empresas de los sectores energético, industrial y de hidrocarburos; análisis y marcos de gestión ambiental y social y políticas de reasentamiento para proyectos de recuperación del espacio público y de mejoramiento de barrios; y consultas públicas; entre otros. ",
+      content: [
+        "Evaluación Ambiental Estratégica.",
+        "Planificación y gestión de reasentamientos.",
+        "Análisis Ambiental, Debida Diligencia y Análisis de Vacíos.",
+        "Evaluación de cumplimiento de las Normas de Desempeño sobre Sostenibilidad Ambiental y Social de la Corporación Financiera Internacional (IFC).",
+        "Desarrollo del Marco Ambiental y Social.",
+        "Fortalecimiento de organizaciones comunitarias (campesinas, indígenas, afrodescendientes) para la gestión y el manejo sostenible y productivo de los recursos naturales de sus territorios.",
+        "Evaluación y estructuración de proyectos productivos, y acompañamiento y asistencia técnica durante su implementación.",
+        "Acompañamiento y asesoría técnica, legal y empresarial a mineros tradicionales en proceso de formalización.",
+      ],
+      image: serviceThreeDetail,
+    },
+  },
+  {
+    id: 4,
+    main: {
+      image: serviceFour,
+      title: "Adaptación y mitigación del cambio climático",
+      description:
+        "Medición de la huella de carbono hídrica de las empresas y los negocio, diseño de medidas de control de emisiones y mitigación.",
+    },
+    detail: {
+      title: "Desarrollo de políticas públicas",
+      description:
+        "OPTIM ha trabajado en la formulación de políticas públicas y regulaciones para la conservación de los bosques y la diversidad biológica; y ha diseñado estrategias nacionales para la mitigación y adaptación del sector energético de Colombia al cambio climático global. También formuló los planes estratégicos para las macrocuencas Magdalena-Cauca y Caribe. Esto incluyó la modelación de escenarios deseables de desarrollo territorial, frente a escenarios de incertidumbre climática, mediante acuerdos intersectoriales.",
+      content: [
+        "Diseño de políticas y regulaciones sectoriales (minero, energético, hidrocarburos, agrícola, forestal, transporte, urbano, etc.) dirigidas a promover la sostenibilidad ambiental y social.",
+        "Planificación y gestión de reasentamientos.",
+        "Diseño de incentivos económicos que promuevan la adopción de prácticas y procesos ambientalmente sostenibles por parte de los sectores productivos.",
+        "Estrategias sectoriales y regionales de mitigación y adaptación al cambio climático.",
+        "Conservación y restauración de ecosistemas naturales, intervenidos y degradados.",
+        "Diseño de estrategias para la formalización y mejoramiento tecnológico de la minería tradicional/informal.",
+        "Políticas, estrategias y regulaciones de ordenamiento territorial y de cuencas.",
+      ],
+      image: serviceFourDetail,
     },
   },
 ];

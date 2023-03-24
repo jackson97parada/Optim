@@ -6,9 +6,9 @@ import userFour from "/user-four.jpeg";
 
 export function Enterprise() {
   return (
-    <div id="enterprise" className="mx-20">
+    <div id="enterprise" className="pt-32 mx-20">
       <h2 className="text-7xl font-semibold">Empresa</h2>
-      <p className="mt-12 mb-6 text-lg text-justify tracking-tighter leading-tight w-[90%]">
+      <p className="mt-12 mb-6 text-lg text-justify tracking-tighter leading-tight w-[97%]">
         Optim, fundada en 2007, es una empresa dedicada al diseño y desarrollo
         de estrategias de gestión ambiental y de desarrollo sostenible para
         distintos sectores y proyectos empresariales y comunitarios. Cuenta con
@@ -17,7 +17,6 @@ export function Enterprise() {
         le encomiendan.
       </p>
       <h2 className="text-[35px] font-semibold mb-12 ml-8">Nuestros Socios</h2>
-      {/* Components */}
       <div className="grid grid-cols-2 gap-y-20">
         <Partner image={userOne} name="Eduardo Uribe" />
         <Partner image={userTwo} name="Jaime Bermúdez" />

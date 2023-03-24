@@ -3,7 +3,7 @@ import servicesData from "../../servicesData";
 import { useParams } from "react-router-dom";
 import Footer from "../footer/Footer.jsx";
 
-export default function ServiceView() {
+export default function ServiceDetail() {
   const { serviceId } = useParams();
   const thisService = servicesData.find(
     (service) => service.id === parseInt(serviceId)
@@ -11,11 +11,17 @@ export default function ServiceView() {
   return (
     <main className="font-poppins pt-4 container w-full max-w-[1280px] mx-auto">
       <Navbar />
-      <header className="flex justify-start items-center shadow-shadowHeader rounded-[110px] bg-cover bg-center mx-auto mt-32 bg-bgServiceOne h-[590px] w-[1260px]">
-        <h1 className="text-7xl text-white font-extrabold pl-20">Servicios</h1>
+      <header
+        id="start"
+        className="flex justify-start items-center shadow-shadowHeader rounded-[110px] mx-auto mt-32 h-[590px] w-[1260px]"
+      >
+        <img className="rounded-[110px]" src={thisService.main.image} alt="" />
+        <h1 className="text-7xl text-white font-extrabold pl-20 absolute">
+          Servicios
+        </h1>
       </header>
-      <div className="px-20 pb-12">
-        <h1 className="text-5xl pl-10 font-semibold py-16 w-3/5 leading-[60px]">
+      <div className="px-20 pb-20">
+        <h1 className="text-5xl pl-10 font-semibold py-16 w-[65%] leading-[60px]">
           {thisService.detail.title}
         </h1>
         <p className="text-[22px] text-justify pb-12 leading-tight">

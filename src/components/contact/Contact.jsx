@@ -15,7 +15,7 @@ export function Contact() {
   };
 
   return (
-    <div id="contact" className="grid grid-cols-2 p-20 mt-20">
+    <div id="contact" className="grid grid-cols-2 gap-6 px-20">
       <div>
         <h2 className="text-7xl font-semibold leading-[5.2rem]">
           {contactData.title}

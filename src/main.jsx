@@ -3,16 +3,16 @@ import ReactDOM from "react-dom/client";
 import App from "./App";
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import ServiceView from "./components/service/ServiceView";
+import ServiceDetail from "./components/service/ServiceDetail";
 
 const routes = createBrowserRouter([
   {
-    path: "/",
+    path: "/Optim",
     element: <App />,
   },
   {
-    path: "/services/:serviceId",
-    element: <ServiceView />,
+    path: "/Optim/services/:serviceId",
+    element: <ServiceDetail />,
   },
 ]);
 

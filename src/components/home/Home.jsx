@@ -11,7 +11,7 @@ export function Home() {
       "Nuestro propósito es optimizar y fortalecer organizaciones públicas, privadas y de cooperacion internacional para desarrollar estrategias sostenibles que contribuyan a la generación de bienestar social y a la prosperidad económica.",
   };
   return (
-    <div id="home" className="flex flex-wrap py-40 mx-20 gap-52">
+    <div id="home" className="flex flex-wrap pt-40 mx-20 gap-52">
       <div className="w-2/6">
         <h1 className="text-7xl font-semibold mb-12">{homeData.title}</h1>
         <p className="mb-10 text-justify leading-5">
