@@ -1,43 +1,71 @@
-import { Dropdown } from "flowbite-react";
 import "flowbite";
 import logo from "../../../public/logo.png";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 export function Navbar() {
   const handleLinkClick = () => {
     window.scrollTo(0, 0);
   };
+
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <nav
       id="navbar"
-      className="px-11 fixed top-0 left-0 right-0 bg-white w-[100vw] md:h-28 z-50 shadow-shadowNavbar"
+      className="px-11 fixed top-0 left-0 right-0 bg-white w-[100vw] lg:h-28 z-50 shadow-shadowNavbar"
     >
-      <div className="flex flex-wrap justify-between mx-auto max-w-[1300px]">
+      <div className="flex flex-wrap lg:flex-nowrap justify-between mx-auto max-w-[1300px]">
         <a href="/Optim/">
-          <img src={logo} className="w-24 md:w-28 pb-6 pt-4" alt="" />
+          <img src={logo} className="w-24 lg:w-28 pb-6 pt-4" alt="logo" />
         </a>
         {/* MENU */}
         <button
-          data-collapse-toggle="navbar-default"
-          type="button"
-          className="p-2 pt-6 ml-3 text-sm text-gray-500 md:hidden"
-          aria-controls="navbar-default"
-          aria-expanded="false"
+          className="mt-4 block lg:hidden"
+          onClick={() => setIsOpen(!isOpen)}
         >
-          <svg viewBox="0 0 100 80" width="25" height="20">
-            <rect width="100" height="15"></rect>
-            <rect y="30" width="100" height="15"></rect>
-            <rect y="60" width="100" height="15"></rect>
-          </svg>
+          {isOpen ? (
+            <svg
+              className="w-10 h-10 transform rotate-90 text-black"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+          ) : (
+            <svg
+              data-collapse-toggle="navbar-default"
+              type="button"
+              aria-controls="navbar-default"
+              aria-expanded="false"
+              className="w-10 h-10 text-black transition duration-300 ease-in-out"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          )}
         </button>
         {/* ==== */}
         <ul
           id="navbar-default"
-          className="md:flex mb-6 md:mb-0 gap-10 hidden text-[15px] w-full md:w-[90%] justify-between font-semibold items-center"
+          className="lg:flex mb-6 lg:mb-0 gap-10 hidden text-[15px] w-full md:w-[90%] justify-between font-semibold items-center"
         >
-          <div className="flex flex-wrap text-center md:text-start gap-4 md:gap-[100px] md:pl-20">
+          <div className="flex flex-wrap lg:flex-nowrap text-center lg:text-start gap-4 lg:gap-[100px] md:pl-20">
             <a
-              className="hover:text-[#10454F] w-full md:w-auto hover:-translate-y-1 transition"
+              className="hover:text-[#10454F] w-full lg:w-auto hover:-translate-y-1 transition"
               href="/Optim/#home"
             >
               Inicio
@@ -47,7 +75,7 @@ export function Navbar() {
               id="dropdownHoverButton"
               data-dropdown-toggle="dropdownHover"
               data-dropdown-trigger="hover"
-              className="hover:text-[#10454F] w-full md:w-auto hover:-translate-y-1 transition"
+              className="hover:text-[#10454F] w-full lg:w-auto hover:-translate-y-1 transition"
               type="button"
             >
               Servicios
@@ -57,7 +85,7 @@ export function Navbar() {
               className="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-64 dark:bg-gray-700"
             >
               <ul
-                className="py-2 text-sm text-gray-700 dark:text-gray-200"
+                className="py-2 text-sm text-gray-700 transition-opacity duration-500 ease-in-out opacity-0 md:opacity-100 transform md:transform-none dark:text-gray-200"
                 aria-labelledby="dropdownHoverButton"
               >
                 <li>
@@ -95,26 +123,26 @@ export function Navbar() {
               </ul>
             </div>
             <a
-              className="hover:text-[#10454F] w-full md:w-auto hover:-translate-y-1 transition"
+              className="hover:text-[#10454F] w-full lg:w-auto hover:-translate-y-1 transition"
               href="/Optim/#enterprise"
             >
               Empresa
             </a>
             <a
-              className="hover:text-[#10454F] w-full md:w-auto hover:-translate-y-1 transition"
+              className="hover:text-[#10454F] w-full lg:w-auto hover:-translate-y-1 transition"
               href="/Optim/#customer"
             >
               Clientes
             </a>
             <a
-              className="hover:text-[#10454F] w-full md:w-auto hover:-translate-y-1 transition"
+              className="hover:text-[#10454F] w-full lg:w-auto hover:-translate-y-1 transition"
               href="/Optim/#projects"
             >
               Proyectos
             </a>
           </div>
           <a
-            className="hidden md:flex py-2.5 px-[18px] bg-black hover:bg-[#10454F] transition text-white rounded-[55px] text-sm font-semibold w-auto"
+            className="hidden lg:flex py-2.5 px-[18px] bg-black hover:bg-[#10454F] transition text-white rounded-[55px] text-sm font-semibold w-auto"
             href="#contact"
           >
             Contacto

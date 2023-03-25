@@ -4,6 +4,8 @@ import App from "./App";
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import ServiceDetail from "./components/service/ServiceDetail";
+import EnterpriseDetail from "./components/enterprise/EnterpriseDetail";
+
 
 const routes = createBrowserRouter([
   {
@@ -13,6 +15,10 @@ const routes = createBrowserRouter([
   {
     path: "/Optim/services/:serviceId",
     element: <ServiceDetail />,
+  },
+  {
+    path: "Optim/enterpriseDetail",
+    element: <EnterpriseDetail />,
   },
 ]);
 

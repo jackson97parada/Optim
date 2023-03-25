@@ -58,23 +58,28 @@ export function Service() {
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
+          centerPadding: "-100px",
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          arrows: false,
           infinite: true,
-          dots: true,
         },
       },
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 2,
+          centerPadding: "30px",
+          arrows: false,
+          slidesToShow: 1,
           slidesToScroll: 2,
-          initialSlide: 2,
+          initialSlide: 1,
         },
       },
       {
         breakpoint: 480,
         settings: {
+          centerPadding: "15px",
+          arrows: false,
           slidesToShow: 1,
           slidesToScroll: 1,
         },
@@ -82,8 +87,13 @@ export function Service() {
     ],
   };
   return (
-    <div id="services" className="pt-32 transition duration-500 ease-in-out">
-      <h1 className="text-7xl font-semibold ml-20 mb-12">Servicios</h1>
+    <div
+      id="services"
+      className="pt-32 mx-6 transition duration-500 ease-in-out"
+    >
+      <h1 className="text-6xl text-center lg:text-start md:text-7xl font-semibold lg:ml-20 mb-16 lg:mb-12">
+        Servicios
+      </h1>
       <Slider className="pb-6" {...settings}>
         {servicesData.map((service, i) => (
           <Card
