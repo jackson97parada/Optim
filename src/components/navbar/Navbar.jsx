@@ -4,10 +4,6 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 
 export function Navbar() {
-  const handleLinkClick = () => {
-    window.scrollTo(0, 0);
-  };
-
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -89,7 +85,7 @@ export function Navbar() {
                 aria-labelledby="dropdownHoverButton"
               >
                 <li>
-                  <Link to={"/Optim/services/1"} onClick={handleLinkClick}>
+                  <Link to={"/Optim/services/1"}>
                     <a className="block text-justify py-2 px-5 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
                       Adaptación y mitigación del cambio climático
                     </a>
@@ -97,7 +93,7 @@ export function Navbar() {
                   <hr className="w-[82%] mx-auto" />
                 </li>
                 <li>
-                  <Link to={"/Optim/services/2"} onClick={handleLinkClick}>
+                  <Link to={"/Optim/services/2"}>
                     <a className="block py-2 px-5 text-justify hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
                       Operación de proyectos de cooperación internacional
                     </a>
@@ -105,7 +101,7 @@ export function Navbar() {
                   <hr className="w-[82%] mx-auto" />
                 </li>
                 <li>
-                  <Link to={"/Optim/services/3"} onClick={handleLinkClick}>
+                  <Link to={"/Optim/services/3"}>
                     <a className="block py-2 px-5 text-justify hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
                       Gestión ambiental y social de proyectos productivos
                     </a>
@@ -113,7 +109,7 @@ export function Navbar() {
                   <hr className="w-[82%] mx-auto" />
                 </li>
                 <li>
-                  <Link to={"/Optim/services/4"} onClick={handleLinkClick}>
+                  <Link to={"/Optim/services/4"}>
                     <a className="block py-2 px-5 text-justify hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
                       Desarrollo de políticas públicas
                     </a>
@@ -143,7 +139,7 @@ export function Navbar() {
           </div>
           <a
             className="hidden lg:flex py-2.5 px-[18px] bg-black hover:bg-[#10454F] transition text-white rounded-[55px] text-sm font-semibold w-auto"
-            href="#contact"
+            href="/Optim/#contact"
           >
             Contacto
           </a>

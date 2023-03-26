@@ -29,6 +29,7 @@ module.exports = {
       shadowServiceDetail: "-24px 24px 24px -7px rgba(0,0,0,0.51)",
       shadowPartner: "-8px 13px 18px -3px rgba(0,0,0,0.3)",
       shadowContact: "-13px 14px 18px 3px rgba(0,0,0,0.3)",
+      shadowWp: "-3px 7px 22px -3px rgba(0,0,0,0.4)",
     },
   },
   plugins: [require("flowbite/plugin.js")],

@@ -1,4 +1,6 @@
 @tailwind base;
+.react-scroll {
+  scroll-behavior: smooth;
+}
 @tailwind components;
 @tailwind utilities;
-

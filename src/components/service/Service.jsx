@@ -34,7 +34,7 @@ const servicesData = [
     image: reunion,
     title: "Desarrollo de políticas públicas",
     description:
-      "Fortalecimiento de organizaciones comunitarias (campesinas, indígenas, afrondescendientes) para la gestión y el manejo sostenible y productivo de los recursos naturales de sus territorios.",
+      "Diseño de políticas y regulaciones sectoriales (minero, energético, hidrocarburos, agrícola, forestal, transporte, urbano, etc.) dirigidas a promover la sostenibilidad ambiental y social.",
     id: 4,
   },
 ];

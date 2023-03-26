@@ -46,13 +46,13 @@ export function Customer() {
   const customerData = {
     title: "Nuestros Clientes",
     description:
-      "Nuestra experiencia abarca proyectos de gestión ambiental y social en diferentes sectores productivos, con un rango de clientes que incluye a las empresas, entidades del gobierno y organizaciones mas importantes de colombia y america latina",
+      "Nuestra experiencia abarca proyectos de gestión ambiental y social en diferentes sectores productivos, con un rango de clientes que incluye a las empresas, entidades del gobierno y organizaciones mas importantes de colombia y america latina.",
   };
 
   return (
     <div id="customer" className="pt-32 mx-6 lg:mx-0 lg:p-20">
       <div className="lg:w-[52%] lg:mt-8">
-        <h2 className="text-6xl md:text-7xl text-center lg:text-start md:w-2/4 lg:w-auto md:mx-auto lg:mx-0 font-semibold leading-[5.2rem]">
+        <h2 className="text-6xl md:text-7xl text-center lg:text-start md:w-2/4 lg:w-auto md:mx-auto lg:mx-0 font-semibold lg:first-letter:leading-[5.3rem]">
           {customerData.title}
         </h2>
         <p className="md:mx-6 lg:mx-0 pt-10 pb-24 text-lg text-justify leading-5 lg:w-[85%]">
