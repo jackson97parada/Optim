@@ -130,12 +130,12 @@ export function Navbar() {
             >
               Clientes
             </a>
-            <a
-              className="hover:text-[#10454F] w-full lg:w-auto hover:-translate-y-1 transition"
-              href="/Optim/#projects"
+            <Link
+              to={"/Optim/projects"}
+              className="lg:w-auto hover:-translate-y-1 w-full transition"
             >
-              Proyectos
-            </a>
+              <a className="hover:text-[#10454F]">Proyectos</a>
+            </Link>
           </div>
           <a
             className="hidden lg:flex py-2.5 px-[18px] bg-black hover:bg-[#10454F] transition text-white rounded-[55px] text-sm font-semibold w-auto"

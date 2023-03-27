@@ -1,41 +1,3 @@
-import userOne from "/user-one.jpeg";
-import userTwo from "/user-two.jpeg";
-import userThree from "/user-three.jpeg";
-import userFour from "/user-four.jpeg";
-
-export const partnersData = [
-  {
-    id: 1,
-    image: userOne,
-    name: "Eduardo Uribe",
-    description: "",
-  },
-  {
-    id: 2,
-    detail: {
-      image: userTwo,
-      name: "Jaime Bermúdez",
-      description: "",
-    },
-  },
-  {
-    id: 3,
-    detail: {
-      image: userThree,
-      name: "Santiago Arango",
-      description: "",
-    },
-  },
-  {
-    id: 4,
-    detail: {
-      image: userFour,
-      name: "Julián Páez",
-      description: "",
-    },
-  },
-];
-
 export function Partner({ image, name, description }) {
   return (
     <div>
@@ -47,7 +9,9 @@ export function Partner({ image, name, description }) {
       <h1 className="text-center text-lg md:text-[26px] cursor-pointer font-semibold mt-8">
         {name}
       </h1>
-      <p className="text-xl text-justify w-3/4 pt-8 mx-auto">{description}</p>
+      <p className="text-xl text-justify -tracking-wider mx-6 md:w-3/4 pt-8 md:mx-auto">
+        {description}
+      </p>
     </div>
   );
 }

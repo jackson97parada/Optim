@@ -1,7 +1,5 @@
-import { Navbar } from "../navbar/Navbar.jsx";
 import servicesData from "../../servicesData";
 import { useParams } from "react-router-dom";
-import Footer from "../footer/Footer.jsx";
 
 import { useEffect } from "react";
 
@@ -17,7 +15,6 @@ export default function ServiceDetail() {
 
   return (
     <main className="font-poppins lg:pt-4 container w-full max-w-[1280px] mx-auto">
-      <Navbar />
       <header
         id="start"
         className="flex justify-center lg:justify-start items-center shadow-shadowHeader lg:rounded-[110px] mx-auto lg:mt-0 lg:h-[590px] w-full lg:w-[1260px]"
@@ -27,7 +24,7 @@ export default function ServiceDetail() {
           src={thisService.main.image}
           alt=""
         />
-        <h1 className="text-[50px] md:text-6xl lg:text-7xl lg:text-white font-extrabold top-36 md:bottom-[80%] lg:bottom-auto md:pt-0 pl-0 lg:pl-20 absolute">
+        <h1 className="text-[50px] md:text-6xl lg:text-7xl lg:text-white font-extrabold top-36 md:top-auto md:bottom-[80%] lg:bottom-auto md:pt-0 pl-0 lg:pl-20 absolute">
           Servicios
         </h1>
         <h1 className="lg:hidden text-[39px] md:left-12 lg:left-auto leading-snug text-center md:text-start font-extrabold pt-56 text-white py-16 md:w-[65%] absolute">
@@ -42,7 +39,7 @@ export default function ServiceDetail() {
           {thisService.detail.description}
         </p>
         <div className="flex text-[17px] lg:text-[22px] leading-tight lg:gap-4">
-          <ul className="space-y-7 text-justify lg:w-[55%]">
+          <ul className="space-y-7 text-justify lg:w-[55%] tracking-tighter">
             {thisService.detail.content.map((item, index) => (
               <li key={index}>• {item}</li>
             ))}

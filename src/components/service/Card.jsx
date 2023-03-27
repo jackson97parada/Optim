@@ -13,7 +13,7 @@ export function Card({ image, title, description, serviceId }) {
         <h1 className="my-8 mt-14 h-14 text-[18.7px] w-full text-center font-semibold leading-tight">
           {title}
         </h1>
-        <p className="text-sm text-justify leading-tight overflow-hidden">
+        <p className="text-[15.69px] text-justify w-[100%] leading-tight tracking-[-1.20px] overflow-hidden">
           {description}
         </p>
       </Link>

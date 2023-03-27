@@ -19,10 +19,10 @@ export function Home() {
         <h1 className="text-6xl md:text-7xl md:w-2/4 lg:w-auto md:mx-auto font-semibold mb-12">
           {homeData.title}
         </h1>
-        <p className="mb-10 md:mx-6 lg:mx-0 text-justify leading-5">
+        <p className="mb-10 md:mx-6 lg:mx-0 text-justify text-base tracking-tighter leading-5">
           {homeData.descriptionOne}
         </p>
-        <p className="md:mx-6 lg:mx-0 text-justify leading-5">
+        <p className="md:mx-6 lg:mx-0 text-justify text-[15.4px] tracking-tighter leading-5">
           {homeData.descriptionTwo}
         </p>
       </div>

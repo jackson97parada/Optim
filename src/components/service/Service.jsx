@@ -26,8 +26,7 @@ const servicesData = [
   {
     image: niños,
     title: "Gestión ambiental y social de proyectos productivos",
-    description:
-      "Fortalecimiento de organizaciones comunitarias (campesinas, indígenas, afrondescendientes) para la gestión y el manejo sostenible y productivo de los recursos naturales de sus territorios.",
+    description: `Fortalecimiento de organizaciones comunitarias (campesinas, indígenas, afrondescendientes) para la gestión y el manejo sostenible y productivo de los recursos naturales de sus territorios.`,
     id: 3,
   },
   {
@@ -66,9 +65,28 @@ export function Service() {
         },
       },
       {
-        breakpoint: 600,
+        breakpoint: 1023,
+        settings: {
+          centerPadding: "-30px",
+          arrows: false,
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 800,
         settings: {
           centerPadding: "30px",
+          arrows: false,
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 1,
+        },
+      },
+      {
+        breakpoint: 599,
+        settings: {
+          centerPadding: "80px",
           arrows: false,
           slidesToShow: 1,
           slidesToScroll: 2,
@@ -78,7 +96,16 @@ export function Service() {
       {
         breakpoint: 480,
         settings: {
-          centerPadding: "15px",
+          centerPadding: "45px",
+          arrows: false,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 400,
+        settings: {
+          centerPadding: "25px",
           arrows: false,
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -86,11 +113,9 @@ export function Service() {
       },
     ],
   };
+
   return (
-    <div
-      id="services"
-      className="pt-32 mx-6 transition duration-500 ease-in-out"
-    >
+    <div id="services" className="pt-32 transition duration-500 ease-in-out">
       <h1 className="text-6xl text-center lg:text-start md:text-7xl font-semibold lg:ml-20 mb-16 lg:mb-12">
         Servicios
       </h1>
