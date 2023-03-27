@@ -23,10 +23,10 @@ export default [
       content: [
         "Evaluación de la vulnerabilidad sectorial y regional al cambio climático.",
         "Formulación de estrategias empresariales, sectoriales y regionales de mitigación y adaptación al cambio climático.",
-        "Estructuración y monitoreo de proyectos MDL para el mercado regulado de Gases con Efecto de Invernadero.",
-        "Estructuración y monitoreo de proyectos para los mercados voluntarios de Gases con Efecto de Invernadero.",
-        "Estructuración y desarrollo de proyectos REDD y REDD+ (Reducción de Emisiones por Deforestación y Degradación) en ecosistemas naturales vulnerables a la deforestación.",
-        "Medición de la huella de carbono, hídrica de las empresas y los negocios, y diseño de medidas de control de emisiones y de mitigación.",
+        "Estructuración y monitoreo de proyectos MDL para el mercado regulado de gases con efecto invernadero.",
+        "Estructuración y monitoreo de proyectos para los mercados voluntarios de gases con efecto de invernadero.",
+        "Estructuración y desarrollo de proyectos REDD y REDD+ (reducción de emisiones por deforestación y degradación) en ecosistemas naturales vulnerables a la deforestación.",
+        "Medición de la huella de carbono y huella hídrica de las empresas y los negocios. Así como el diseño de medidas de control de emisiones y de mitigación.",
         "Conservación y restauración de ecosistemas naturales, intervenidos y degradados.",
         "Desarrollo de metodologías para los mercados de carbono.",
       ],
@@ -44,7 +44,7 @@ export default [
     detail: {
       title: "Operación de proyectos de cooperación internacional",
       description:
-        "OPTIM, mediante contrato con Chemonics International, ejecuta el Proyecto BIOREDD+ financiado con recursos de USAID. Este proyecto incluye la estructuración de catorce proyectos REDD+ en el litoral pacífico en los territorios de comunidades indígenas y negras; y el fortalecimiento y el desarrollo de proyectos productivos con esas comunidades. Adicionalmente, el Proyecto BIOREDD+ incluye la formalización de los mineros tradicionales de oro en Antioquia, en estrecha coordinación con las empresas Gran Colombia Gold y Mineros S.A.",
+        "OPTIM, mediante contrato con Chemonics International, ejecuta el Proyecto BIOREDD+ financiado con recursos de USAID. Este proyecto incluye la estructuración de catorce proyectos REDD+ en los territorios de comunidades indígenas y negras del litoral pacífico; y el fortalecimiento y el desarrollo de proyectos productivos con esas comunidades. Adicionalmente, el Proyecto BIOREDD+ incluye la formalización de los mineros tradicionales de oro en Antioquia, en estrecha coordinación con las empresas Gran Colombia Gold y Mineros S.A.",
       content: [
         "Evaluación del desempeño ambiental y social de las empresas, y diseño y acompañamiento en la implementación de estrategias de sostenibilidad social y ambiental.",
         "Elaboración de Planes de Manejo Ambiental, Estudios de Impacto Ambiental, Diagnósticos Ambientales de Alternativas, y acompañamiento a las empresas en sus gestiones ante las autoridades ambientales.",
@@ -69,7 +69,7 @@ export default [
     detail: {
       title: "Gestión ambiental y social de proyectos productivos",
       description:
-        "OPTIM ha realizado “Gap Analyses” y marcos política de reasentamiento para proyectos mineros. Ha realizado Debidas Diligencias ambiental y social para varias empresas de los sectores energético, industrial y de hidrocarburos; análisis y marcos de gestión ambiental y social y políticas de reasentamiento para proyectos de recuperación del espacio público y de mejoramiento de barrios; y consultas públicas; entre otros. ",
+        "OPTIM ha realizado “Gap Analyses” y marcos política de reasentamiento para proyectos mineros. Ha realizado Debidas Diligencias ambientales y sociales para varias empresas del sector energético, industrial y de hidrocarburos; así como análisis y marcos de gestión ambiental y social y políticas de reasentamiento para proyectos de recuperación del espacio público y de mejoramiento de barrios; consultas públicas, entre otros.",
       content: [
         "Evaluación Ambiental Estratégica.",
         "Planificación y gestión de reasentamientos.",
@@ -94,9 +94,9 @@ export default [
     detail: {
       title: "Desarrollo de políticas públicas",
       description:
-        "OPTIM ha trabajado en la formulación de políticas públicas y regulaciones para la conservación de los bosques y la diversidad biológica; y ha diseñado estrategias nacionales para la mitigación y adaptación del sector energético de Colombia al cambio climático global. También formuló los planes estratégicos para las macrocuencas Magdalena-Cauca y Caribe. Esto incluyó la modelación de escenarios deseables de desarrollo territorial, frente a escenarios de incertidumbre climática, mediante acuerdos intersectoriales.",
+        "OPTIM ha trabajado en la formulación de políticas públicas y regulaciones para la conservación de los bosques y la diversidad biológica; y ha diseñado estrategias nacionales para la mitigación y adaptación del sector energético de Colombia al cambio climático global. También ha formulado planes estratégicos para las macrocuencas Magdalena-Cauca y Caribe. Esto incluyó la modelación de escenarios deseables de desarrollo territorial, frente a escenarios de incertidumbre climática, mediante acuerdos intersectoriales.",
       content: [
-        "Diseño de políticas y regulaciones sectoriales (minero, energético, hidrocarburos, agrícola, forestal, transporte, urbano, etc.) dirigidas a promover la sostenibilidad ambiental y social.",
+        "Diseño de políticas y regulaciones sectoriales (mineras, energéticas, de hidrocarburos, agrícolas, forestales, de transporte, urbanas, entre otras) dirigidas a promover la sostenibilidad ambiental y social.",
         "Planificación y gestión de reasentamientos.",
         "Diseño de incentivos económicos que promuevan la adopción de prácticas y procesos ambientalmente sostenibles por parte de los sectores productivos.",
         "Estrategias sectoriales y regionales de mitigación y adaptación al cambio climático.",

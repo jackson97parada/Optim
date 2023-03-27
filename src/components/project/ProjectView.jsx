@@ -36,11 +36,12 @@ export default function ProjectView() {
         <h1 className="hidden lg:flex text-5xl pl-10 font-semibold py-16 w-[65%] leading-[60px]">
           {thisProject.data.name}
         </h1>
-        <p className="text-[19px] lg:text-[20px] tracking-tighter text-justify pt-20 lg:pt-0 pb-12 leading-tight whitespace-pre-line">
-          {thisProject.data.description}
-        </p>
+        <p
+          className="text-[19px] lg:text-[20px] tracking-tighter text-justify pt-20 lg:pt-0 pb-12 leading-tight whitespace-pre-line"
+          dangerouslySetInnerHTML={{ __html: thisProject.data.description }}
+        ></p>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 pt-28 md:pt-10 lg:pt-0 gap-4 gap-y-16 lg:gap-y-44">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 pt-28 md:pt-10 lg:pt-0 gap-4 gap-y-16 lg:gap-y-28">
         {projectsData.map((project, i) => (
           <Project
             key={i}

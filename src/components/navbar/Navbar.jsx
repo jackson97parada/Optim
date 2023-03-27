@@ -1,4 +1,7 @@
 import "flowbite";
+import "flowbite/dist/flowbite.min.css";
+import "flowbite/dist/flowbite.min.js";
+
 import logo from "../../../public/logo.png";
 import { Link } from "react-router-dom";
 import { useState } from "react";
@@ -57,12 +60,14 @@ export function Navbar() {
         {/* ==== */}
         <ul
           id="navbar-default"
-          className="lg:flex mb-6 lg:mb-0 gap-10 hidden text-[15px] w-full md:w-[90%] justify-between font-semibold items-center"
+          className={`lg:flex mb-6 lg:mb-0 gap-10 text-[15px] w-full md:w-[90%] justify-between font-semibold items-center ${
+            isOpen ? "block" : "hidden"
+          }`}
         >
           <div className="flex flex-wrap lg:flex-nowrap text-center lg:text-start gap-4 lg:gap-[100px] md:pl-20">
             <a
-              className="hover:text-[#10454F] w-full lg:w-auto hover:-translate-y-1 transition"
               href="/Optim/#home"
+              className="hover:text-[#10454F] w-full lg:w-auto hover:-translate-y-1 transition"
             >
               Inicio
             </a>
@@ -71,53 +76,57 @@ export function Navbar() {
               id="dropdownHoverButton"
               data-dropdown-toggle="dropdownHover"
               data-dropdown-trigger="hover"
-              className="hover:text-[#10454F] w-full lg:w-auto hover:-translate-y-1 transition"
+              className={`hover:text-[#10454F] w-full lg:w-auto hover:-translate-y-1 transition`}
               type="button"
+              onMouseEnter={() => setIsOpen(true)}
+              onMouseLeave={() => setIsOpen(false)}
             >
               Servicios
-            </a>
-            <div
-              id="dropdownHover"
-              className="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-64 dark:bg-gray-700"
-            >
-              <ul
-                className="py-2 text-sm text-gray-700 transition-opacity duration-500 ease-in-out opacity-0 md:opacity-100 transform md:transform-none dark:text-gray-200"
-                aria-labelledby="dropdownHoverButton"
+              <div
+                id="dropdownHover"
+                className={`z-10 lg:absolute bg-white divide-y divide-gray-100 rounded-lg shadow w-64 dark:bg-gray-700 ${
+                  isOpen ? "" : "hidden"
+                }`}
               >
-                <li>
-                  <Link to={"/Optim/services/1"}>
-                    <a className="block text-justify py-2 px-5 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
-                      Adaptación y mitigación del cambio climático
-                    </a>
-                  </Link>
-                  <hr className="w-[82%] mx-auto" />
-                </li>
-                <li>
-                  <Link to={"/Optim/services/2"}>
-                    <a className="block py-2 px-5 text-justify hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
-                      Operación de proyectos de cooperación internacional
-                    </a>
-                  </Link>
-                  <hr className="w-[82%] mx-auto" />
-                </li>
-                <li>
-                  <Link to={"/Optim/services/3"}>
-                    <a className="block py-2 px-5 text-justify hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
-                      Gestión ambiental y social de proyectos productivos
-                    </a>
-                  </Link>
-                  <hr className="w-[82%] mx-auto" />
-                </li>
-                <li>
-                  <Link to={"/Optim/services/4"}>
-                    <a className="block py-2 px-5 text-justify hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
-                      Desarrollo de políticas públicas
-                    </a>
-                  </Link>
-                  <hr className="w-[82%] mx-auto" />
-                </li>
-              </ul>
-            </div>
+                <ul
+                  className="py-2 hidden lg:block text-sm text-gray-700 transition-opacity duration-500 ease-in-out opacity-0 md:opacity-100 transform md:transform-none dark:text-gray-200"
+                  aria-labelledby="dropdownHoverButton"
+                >
+                  <li>
+                    <Link to={"/Optim/services/1"}>
+                      <button className="block text-justify py-2 px-5 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                        Adaptación y mitigación del cambio climático
+                      </button>
+                    </Link>
+                    <hr className="w-[82%] mx-auto" />
+                  </li>
+                  <li>
+                    <Link to={"/Optim/services/2"}>
+                      <button className="block py-2 px-5 text-justify hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                        Operación de proyectos de cooperación internacional
+                      </button>
+                    </Link>
+                    <hr className="w-[82%] mx-auto" />
+                  </li>
+                  <li>
+                    <Link to={"/Optim/services/3"}>
+                      <button className="block py-2 px-5 text-justify hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                        Gestión ambiental y social de proyectos productivos
+                      </button>
+                    </Link>
+                    <hr className="w-[82%] mx-auto" />
+                  </li>
+                  <li>
+                    <Link to={"/Optim/services/4"}>
+                      <button className="block py-2 px-5 text-justify hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                        Desarrollo de políticas públicas
+                      </button>
+                    </Link>
+                    <hr className="w-[82%] mx-auto" />
+                  </li>
+                </ul>
+              </div>
+            </a>
             <a
               className="hover:text-[#10454F] w-full lg:w-auto hover:-translate-y-1 transition"
               href="/Optim/#enterprise"
@@ -134,7 +143,7 @@ export function Navbar() {
               to={"/Optim/projects"}
               className="lg:w-auto hover:-translate-y-1 w-full transition"
             >
-              <a className="hover:text-[#10454F]">Proyectos</a>
+              <button className="hover:text-[#10454F]">Proyectos</button>
             </Link>
           </div>
           <a

@@ -35,8 +35,7 @@ export const projectsData = [
       name: "Energía",
       description: `Nuestros trabajos con el sector energético incluyen el desarrollo de proyectos MDL para varias Pequeñas Centrales Hidroeléctricas (PCHs) y plantas de generación con biomasa; desarrollamos el primer proyecto MDL programático del país. Hemos desarrollado la “Debida Diligencia Ambiental y Social” (Due Diligence) para empresas generadoras, verificando el cumplimiento de estándares como los del International Finance Corporation (IFC). Adicionalmente, formulamos la agenda conjunta para los ministerios de energía (hidrocarburos) y ambiente. Actualmente nos encontramos elaborando el Plan de Adaptación del Sector Energético al Cambio Climático (Unidad de Planeación Minero Energética del Ministerio de Minas). 
 
-      Programa (MDL) de actividades de eficiencia energética a través de la adopción de tecnologías energético-eficientes en Colombia       
-      Consiste en la adopción de tecnologías energético-eficientes, incluyendo, entre otros: lámparas, balastos, refrigeradores, motores, ventiladores, aires acondicionados, sistemas de bombeo. Estas tecnologías han permitido ahorros de energía hasta del 30%, y las consecuentes disminuciones en las emisiones de CO2.`,
+      Programa (MDL) de actividades de eficiencia energética a través de la adopción de tecnologías energético-eficientes en Colombia. Esta consiste en la adopción de tecnologías energético-eficientes, incluyendo, entre otros: lámparas, balastos, refrigeradores, motores, ventiladores, aires acondicionados, sistemas de bombeo. Estas tecnologías han permitido ahorros de energía hasta del 30%, y las consecuentes disminuciones en las emisiones de CO2.`,
     },
   },
   {
@@ -44,7 +43,7 @@ export const projectsData = [
     data: {
       image: pictureFour,
       name: "Forestal",
-      description: `Hemos participado en el desarrollo de proyectos forestales, en Colombia y en Chile, dirigidos a la restauración ecológica, la conservación, y la mitigación y adaptación al cambio climático. Entre estos proyectos se encuentran los 14 proyectos REDD+ que actualmente desarrollamos para USAID, en asocio con Chemonics International, en cerca de un millón de hectáreas de territorios de comunidades afrocolombianas e indígenas en el litoral pacífico de Colombia.`,
+      description: `Hemos participado en el desarrollo de proyectos forestales en Colombia y en Chile, dirigidos a la restauración ecológica, la conservación, y la mitigación y adaptación al cambio climático. Entre estos proyectos se encuentran los 14 proyectos REDD+ que actualmente desarrollamos para USAID, en asocio con Chemonics International, en cerca de un millón de hectáreas de territorios de comunidades afrocolombianas e indígenas en el litoral pacífico de Colombia.`,
     },
   },
   {
@@ -52,7 +51,7 @@ export const projectsData = [
     data: {
       image: pictureFive,
       name: "Transporte",
-      description: `Entre los proyectos desarrollados por OPTIM en este sector se destacan la evaluación y formulación de estrategias para mejorar la eficiencia logística y la reducción de las emisiones del sector de transporte de carga en Colombia, y el desarrollo de una metodología para el Verified Carbon Standard (VCS) para el cambio de combustible en vehículos ligeros.`,
+      description: `Entre los proyectos desarrollados por OPTIM en este sector se destacan la evaluación y formulación de estrategias para mejorar la eficiencia logística y la reducción de las emisiones del sector de transporte de carga en Colombia, y el desarrollo de una metodología del Verified Carbon Standard (VCS) para el cambio de combustible en vehículos ligeros.`,
     },
   },
   {
@@ -76,7 +75,7 @@ export const projectsData = [
     data: {
       image: pictureEight,
       name: "Agua y saneamiento básico",
-      description: `Hemos desarrollado el diagnóstico, análisis y diseño de reformas fiscales y regulatorias para la gestión eficiente de residuos domésticos en América Latina; y varios proyectos MDL para la captura y combustión del biogás generado en rellenos sanitarios y para reducción de emisiones asociadas al reciclaje de tereftalato de polietileno (PET).`,
+      description: `Hemos desarrollado el diagnóstico, análisis y diseño de reformas fiscales y regulatorias para la gestión eficiente de residuos domésticos en América Latina; y varios proyectos MDL para la captura y combustión del biogás generado en rellenos sanitarios y para la reducción de emisiones asociadas al reciclaje de tereftalato de polietileno (PET).`,
     },
   },
   {
@@ -84,13 +83,15 @@ export const projectsData = [
     data: {
       image: pictureNine,
       name: "Desarrollo urbano",
-      description: `OPTIM ha contribuido en diferentes programas de desarrollo urbano liderados por los Ministerios de Vivienda y Cultura; con Apoyo del Banco Interamericano de Desarrollo (BID). Nuestro aporte incluye el Análisis Ambiental y Social de los programas y proyectos y la elaboración del Marco de Gestión Ambiental y Social, de la Política de Reasentamiento y de la Estrategia de Consulta y Participación. 
+      description: `OPTIM ha contribuido en diferentes programas de desarrollo urbano liderados por los ministerios de vivienda y cultura; con apoyo del banco interamericano de desarrollo (BID). Nuestro aporte incluye el análisis ambiental y social de los programas y proyectos y la elaboración del marco de gestión ambiental y social, de la política de reasentamiento y de la estrategia de consulta y participación. 
 
-      Recuperación de espacio público de centros históricos. 
-      OPTIM asesoró proyectos de recuperación de espacio público en los municipios de Buga y Mompox. Esto incluye el Análisis Ambiental y Social de los impactos asociados a  proyectos de peatonalización y recuperación de espacios públicos.
+      ${"<b>Recuperación de espacio público de centros históricos.</b>"}
+      
+      OPTIM asesoró proyectos de recuperación de espacio público en los municipios de buga y mompox. esto incluye el análisis ambiental y social de los impactos asociados a proyectos de peatonalización y recuperación de espacios públicos.
 
-      Programa de Mejoramiento Integral de Barrios y otros componentes en el marco del Programa de Apoyo a la política de la vivienda social.
-      OPTIM desarrolló el Análisis Ambiental y Social, el Marco de Gestión Ambiental y Social, la Estrategia de Consulta y Participación y el Marco de política de reasentamiento como insumos para futuras intervenciones en el marco del Programa de Mejoramiento Integral de Barrios y demás componentes del Programa de Apoyo a la Política de la Vivienda Social. `,
+      Programa de mejoramiento integral de barrios y otros componentes en el marco del programa de apoyo a la política de la vivienda social.
+      
+      OPTIM desarrolló el análisis ambiental y social, el marco de gestión ambiental y social, la estrategia de consulta y participación y el marco de política de reasentamiento como insumos para futuras intervenciones en el marco del programa de mejoramiento integral de barrios y demás componentes del programa de apoyo a la política de la vivienda social.`,
     },
   },
   {

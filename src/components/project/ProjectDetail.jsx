@@ -9,7 +9,7 @@ export const projectsDetail = {
   image: project,
   title: "Conoce más de nuestros proyectos",
   description:
-    "Nuestra experiencia abarca proyectos de gestión ambiental y social en diferentes sectores productivos, con un rango de clientes que incluye empresas, entidades del gobierno y organizaciones tales como CEMEX, BUNGE, CCX, INDUPALMA, Gas Natural, Coca-Cola FEMSA, EPM, ECOPETROL, MPX, ASOCARS, ASHMORE, BID, USAID, y los Ministerios del Ambiente, Cultura y Minas entre otras.",
+    "Nuestra experiencia abarca proyectos de gestión ambiental y social en diferentes sectores productivos, con un rango de clientes que incluye empresas, entidades del gobierno y organizaciones tales como CEMEX, BUNGE, CCX, INDUPALMA, Gas Natural, Coca-Cola FEMSA, EPM, ECOPETROL, MPX, ASOCARS, ASHMORE, BID, USAID, y los ministerios de Ambiente, Cultura y Minas, entre otras.",
 };
 
 function ProjectDetail() {
@@ -34,11 +34,11 @@ function ProjectDetail() {
         <h1 className="hidden lg:flex text-5xl pl-16 font-semibold py-16 w-[65%] leading-[60px]">
           {projectsDetail.title}
         </h1>
-        <p className="hidden lg:flex text-[19px] lg:text-[22px] tracking-tighter md:tracking-[-1.7px] text-justify pt-20 lg:pt-0 pb-12 leading-tight whitespace-pre-line">
+        <p className="hidden lg:flex text-[19px] lg:text-[22px] text-justify pt-20 lg:pt-0 pb-12 leading-tight whitespace-pre-line">
           {projectsDetail.description}
         </p>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 pt-28 md:pt-44 lg:pt-0 gap-4 gap-y-16 lg:gap-y-44">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 pt-28 md:pt-44 lg:pt-0 gap-4 gap-y-16 lg:gap-y-28">
         {projectsData.map((project, i) => (
           <Project
             key={i}

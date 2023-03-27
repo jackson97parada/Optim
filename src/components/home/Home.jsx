@@ -6,9 +6,9 @@ export function Home() {
   const homeData = {
     title: "¿Qué hacemos?",
     descriptionOne:
-      "Ofrecemos servicios de consultoría para la gestión ambiental y social de los sectores productivos. Hemos desarrollado proyectos para los sectores agropecuario, pesquero, agroindustrial, forestal, transporte, infraestructura, alimentos y bebidas, y construcción de vivienda a nivel nacional e internacional.",
+      "Ofrecemos servicios de consultoría para la gestión ambiental y social de los sectores productivos. Hemos desarrollado proyectos para los sectores agropecuario, pesquero, agroindustrial, forestal, transporte, infraestructura, alimentos y construcción de vivienda a nivel nacional e internacional.",
     descriptionTwo:
-      "Nuestro propósito es optimizar y fortalecer organizaciones públicas, privadas y de cooperacion internacional para desarrollar estrategias sostenibles que contribuyan a la generación de bienestar social y a la prosperidad económica.",
+      "Nuestro propósito es optimizar y fortalecer organizaciones públicas, privadas y de cooperación internacional para desarrollar estrategias sostenibles que contribuyan a la generación de bienestar social y a la prosperidad económica.",
   };
   return (
     <div

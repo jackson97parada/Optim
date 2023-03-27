@@ -24,7 +24,7 @@ export default function ServiceDetail() {
           src={thisService.main.image}
           alt=""
         />
-        <h1 className="text-[50px] md:text-6xl lg:text-7xl lg:text-white font-extrabold top-36 md:top-auto md:bottom-[80%] lg:bottom-auto md:pt-0 pl-0 lg:pl-20 absolute">
+        <h1 className="text-[50px] md:text-6xl lg:text-7xl lg:text-white font-extrabold top-32 md:top-40 lg:top-auto md:bottom-[80%] lg:bottom-auto md:pt-0 pl-0 lg:pl-20 absolute">
           Servicios
         </h1>
         <h1 className="lg:hidden text-[39px] md:left-12 lg:left-auto leading-snug text-center md:text-start font-extrabold pt-56 text-white py-16 md:w-[65%] absolute">
